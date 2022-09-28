@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sorting page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="title">Sorting Visualiser By Harsh Agnihotri</h1>
+    <div class="controls">
+      <div class="div_1">
+        <span for="speed" id="speed_text">Speed: 50</span>
+        <input type="range" id="speed" max="100" min="1" value="50"/>
+        <span for="range" id="range_text">Range: 10</span>
+        <input type="range" id="range" max="50" min="10" value="15" />
+      </div>
+      <div class="div_2">
+        <button class="btn bubble" onclick="sorting_method(1);">Bubble Sort</button>
+        <button class="btn selection" onclick="sorting_method(2);">Selection Sort</button>
+        <button class="btn insertion" onclick="sorting_method(3);">insertion Sort</button>
+        <button class="btn quick" onclick="sorting_method(4);">Quick Sort</button>
+        <button class="btn merge" onclick="sorting_method(5);">Merge Sort</button>
+      </div>
+    </div>
+    <div class="container-div">
+      <div class="sorting_arr"><h1>Array will appear here</h1></div>
+      <div><button class="btn generate_list" onclick="creating_list();">Get List</button><button onclick="Sort_btn_func();" class="btn flag">Start</button></div>
+
+    </div>
+      <script src="./script.js"></script>
+  </body>
+</html>
